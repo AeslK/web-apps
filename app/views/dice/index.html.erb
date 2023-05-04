@@ -7,9 +7,12 @@
       die2 = rand(1..6)
       total = die1 + die2 
       %>
-   <p> 
-     <%= die1 %>
-     <%= die2 %></p>
 
-     <p>
-    The total is <%= total%> </p>
+    <p>
+    <img src="/images/dice/<%= die1 %>.svg" alt="">
+    <img src="/images/dice/<%= die2 %>.svg" alt="">
+
+     <h2>
+    The total is <%= total%> </h2>
+    
+    <a href="/dice">Roll again!</a>
